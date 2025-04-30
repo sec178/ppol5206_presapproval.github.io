@@ -26,11 +26,11 @@ Final data sets were compiled at the weekly (n=796) and daily level (n=5,885)
 ## Methodology: Model & Pipeline in Databricks
 Once data were collected, we utilized Databricks for its cloud, Spark, and pipeline capabilities. This included the following steps:
 
-Sentiment Analysis: Generate sentiment scores (-1 to 1) from comment texts (TextBlob package used)
+*Sentiment Analysis*: Generate sentiment scores (-1 to 1) from comment texts (TextBlob package used)
 
-Data Merging: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
+*Data Merging*: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
 
-Model Training: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating. The XGboost algorithm was chosen for its accuracy and ability to handle null values
+*Model Training*: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating. The XGboost algorithm was chosen for its accuracy and ability to handle null values
 
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
