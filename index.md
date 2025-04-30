@@ -21,6 +21,7 @@ Our data came from 2 main sources:
 - Retrieved using the Reddit API
 - Date range: 2009-2025
 
+Final data sets were compiled at the weekly (n=796) and daily level (n=5,885)
 
 ## Methodology: Model & Pipeline in Databricks
 Once data were collected, we utilized Databricks for its cloud, Spark, and pipeline capabilities. This included the following steps:
@@ -29,7 +30,7 @@ Sentiment Analysis: Generate sentiment scores (-1 to 1) from comment texts (Text
 
 Data Merging: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
 
-Model Training: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating
+Model Training: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating. The XGboost algorithm was chosen for its accuracy and ability to handle null values
 
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
@@ -39,5 +40,14 @@ Model Training: An XGboost model was then trained using the subreddit sentiment 
 
 
 ## Findings
+
+The lagged weekly model had an Mean Absolute Error of 3.4, with a Root Mean Squared Error of 4.36.  
 ![XGboost - Weekly Lagged Model Performance](visuals/model_lag_weekly.png)
+
+The daily model had a Mean Absolute Error of 3.1, with a Root Mean Squared Error of 4.08.
 ![XGboost - Daily Model Performance](visuals/model_daily.png)
+
+Both models had relatively high R-squared values (0.54 and 0.42, respectively), indicating a relatively high proportion of variance explained by the model. 
+
+Despite some clear drawbacks to this model pipeline and project (relatively low number of observations, sparsity, inability to guage representative samples, online bias, etc.), the scope of this project is promising: it is relatively easy to scale up this pipeline, and to continually enhance the model over time. In addition, due to the cloud and use of big data architecture through Databricks, it can be scaled upward if necessary. Findings and predictions can lead to more responsive governance, early warnings for political shifts, and improved public engagement.
+
