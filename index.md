@@ -13,6 +13,7 @@ For this project, we wanted to employ a similar non-traditional prediction metho
 ## Methodology: Model & Pipeline
 
 ### Databricks
+![Pipeline Diagram](visuals/pipeline_databricks.png)
 
 ### XGBoost
 
