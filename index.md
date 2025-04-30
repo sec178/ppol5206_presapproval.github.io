@@ -24,12 +24,9 @@ Our data came from 2 main sources:
 
 ## Methodology: Model & Pipeline in Databricks
 Once data were collected, we utilized Databricks for its cloud, Spark, and pipeline capabilities. This included the following steps:
-
-Sentiment Analysis: Generate sentiment scores (-1 to 1) from comment texts (TextBlob package used)
-
-Data Merging: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
-
-Model Training: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating
+- Sentiment Analysis: Generate sentiment scores (-1 to 1) from comment texts (TextBlob package used)
+- Data Merging: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
+- Model Training: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating
 
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
