@@ -9,6 +9,16 @@ Many politicos and pundits complain about the accuracy of polls during president
 For this project, we wanted to employ a similar non-traditional prediction method, and see if a model trained on the sentiment of reddit comments about sitting presidents could yield similar approval rating results to actual polls. Findings could potentially produce a way to gauge approval rating without the need for extensive polling more broadly, or at the very least, augment pollsters’ findings. 
 
 ## Data
+Our data came from 2 main sources: 
+**Presidential Approval Rating**
+- Scraped from website of the [American Presidency Project](https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval-all-data)
+- Aggregated at the weekly level
+- Data collected by Gallup
+**Reddit Comments**
+- Comments and posts about presidents (Obama, Trump, Biden)
+- Retrieved using the Reddit API
+- Date range: 2009-2025
+
 
 ## Methodology: Model & Pipeline
 
