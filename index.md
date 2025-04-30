@@ -37,7 +37,8 @@ Once data were collected, we utilized Databricks for its cloud, Spark, and pipel
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
 ## Exploratory Data Analysis
-![Approval Ratings over time by President](visuals/pres_approval_overtime.png) ![Average Sentiment Scores (Rounded) for past 3 Presidents](visuals/pres_sentiment_avg.png)
+![Approval Ratings over time by President](visuals/pres_approval_overtime.png) 
+![Average Sentiment Scores (Rounded) for past 3 Presidents](visuals/pres_sentiment_avg.png)
 
 
 ## Findings
