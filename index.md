@@ -14,6 +14,7 @@ Our data came from 2 main sources:
 - Scraped from website of the [American Presidency Project](https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval-all-data)
 - Aggregated at the weekly level
 - Data collected by Gallup
+  
 **Reddit Comments**
 - Comments and posts about presidents (Obama, Trump, Biden)
 - Retrieved using the Reddit API
