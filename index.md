@@ -18,4 +18,5 @@ For this project, we wanted to employ a similar non-traditional prediction metho
 ### XGBoost
 
 ## Findings
-
+![XGboost - Weekly Lagged Model Performance](visuals/model_lag_weekly.png)
+![XGboost - Daily Model Performance](visuals/model_daily.png)
