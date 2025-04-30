@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Predicting presidential approval ratings with Reddit comments
+![Presidential Seal](visuals/president_seal.jpg)
 ---
 
 ## Motivation & Background
