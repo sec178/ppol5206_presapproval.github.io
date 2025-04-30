@@ -10,6 +10,7 @@ For this project, we wanted to employ a similar non-traditional prediction metho
 
 ## Data
 Our data came from 2 main sources: 
+
 **Presidential Approval Rating**
 - Scraped from website of the [American Presidency Project](https://www.presidency.ucsb.edu/statistics/data/presidential-job-approval-all-data)
 - Aggregated at the weekly level
@@ -21,12 +22,18 @@ Our data came from 2 main sources:
 - Date range: 2009-2025
 
 
-## Methodology: Model & Pipeline
+## Methodology: Model & Pipeline in Databricks
+Once data were collected, we utilized Databricks for its cloud, Spark, and pipeline capabilities. This included the following steps:
+Sentiment Analysis: Generate sentiment scores (-1 to 1) from comment texts (TextBlob package used)
+Data Merging: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
+Model Training: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating
 
-### Databricks
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
-### XGBoost
+## Exploratory Data Analysis
+![Approval Ratings over time by President](visuals/pres_approval_overtime.png)
+![Average Sentiment Scores (Rounded) for past 3 Presidents](visuals/pres_sentiment_avg.png)
+
 
 ## Findings
 ![XGboost - Weekly Lagged Model Performance](visuals/model_lag_weekly.png)
