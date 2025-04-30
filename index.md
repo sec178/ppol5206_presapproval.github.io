@@ -41,10 +41,10 @@ Model Training: An XGboost model was then trained using the subreddit sentiment 
 
 ## Findings
 
-The lagged weekly model had an Mean Absolute Error of 3.4, with a Root Mean Squared Error of 4.36.  
+The lagged weekly model had an Mean Absolute Error of 3.4, with a Root Mean Squared Error of 4.36:  
 ![XGboost - Weekly Lagged Model Performance](visuals/model_lag_weekly.png)
 
-The daily model had a Mean Absolute Error of 3.1, with a Root Mean Squared Error of 4.08.
+The daily model had a Mean Absolute Error of 3.1, with a Root Mean Squared Error of 4.08:
 ![XGboost - Daily Model Performance](visuals/model_daily.png)
 
 Both models had relatively high R-squared values (0.54 and 0.42, respectively), indicating a relatively high proportion of variance explained by the model. 
