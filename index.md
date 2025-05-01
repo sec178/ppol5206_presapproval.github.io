@@ -57,9 +57,12 @@ The Python notebook used to compile and merge the data, calculate sentiment, and
 
 <details>
   <summary>Click to see more of the code</summary>
-  [Approval scraping script](https://github.com/holtcochran/PPOL5206-FinalProject/blob/main/approval/notebooks/approval_rating/mdf_presapproval.ipynb)
-  [Reddit API code](https://github.com/holtcochran/PPOL5206-FinalProject/blob/main/approval/scripts/reddit_api.py)
-  ["Medallion" Pipeline: Ingestion (bronze), analysis (silver), consolidation (gold)](https://github.com/holtcochran/PPOL5206-FinalProject/tree/main/approval/notebooks)
+  
+  <a href="https://github.com/holtcochran/PPOL5206-FinalProject/blob/main/approval/notebooks/approval_rating/mdf_presapproval.ipynb" style="display: inline-block; padding: 10px 20px; margin: 5px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">Approval scraping script</a>
+
+  <a href="https://github.com/holtcochran/PPOL5206-FinalProject/blob/main/approval/scripts/reddit_api.py" style="display: inline-block; padding: 10px 20px; margin: 5px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">Reddit API code</a>
+
+  <a href="https://github.com/holtcochran/PPOL5206-FinalProject/tree/main/approval/notebooks" style="display: inline-block; padding: 10px 20px; margin: 5px; background-color: #ffc107; color: white; text-decoration: none; border-radius: 5px;">"Medallion" Pipeline: Ingestion (bronze), analysis (silver), consolidation (gold)</a>
 </details>
 
 ---
