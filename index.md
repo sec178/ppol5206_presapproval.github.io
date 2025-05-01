@@ -26,7 +26,32 @@ Our data came from 2 main sources:
 - Retrieved using the Reddit API
 - Date range: 2009-2025
 
-Final data sets were compiled at the weekly (n=796) and daily level (n=5,885)
+Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). 
+
+<!-- Load jQuery and DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<h2>Interactive CSV Table</h2>
+<table id="csv-table" class="display" style="width:100%"></table>
+
+<script>
+// Load and render CSV with DataTables
+$(document).ready(function() {
+    $.get('/data/approval.csv', function(csvData) {
+        const rows = csvData.split("\n").map(r => r.split(","));
+        const header = rows.shift();
+        const body = rows.filter(r => r.length === header.length);
+
+        $('#csv-table').DataTable({
+            data: body,
+            columns: header.map(h => ({ title: h }))
+        });
+    });
+});
+</script>
+
 
 ---
 ## Methodology: Model & Pipeline in Databricks
