@@ -45,7 +45,7 @@ Once data were collected, we utilized Databricks for its cloud, Spark, and pipel
 
 *Data Merging*: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
 
-*Model Training*: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating. The XGboost algorithm was chosen for its accuracy and ability to handle null values
+*Model Training*: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating. The XGboost algorithm was chosen for its accuracy and ability to handle null values. We tested two different XGboost models: one predicting weekly approval ratings using comment sentiment aggregated by mean at the lagged weekly level (n=796) to account for delays in reporting, and one at the daily level (n=5,885)
 
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
