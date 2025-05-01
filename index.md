@@ -26,7 +26,7 @@ Our data came from 2 main sources:
 - Retrieved using the Reddit API
 - Date range: 2009-2025
 
-Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). The schema of the final data set was as follows:
+Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). The schema of the final data set was as follows (please note, this is an example):
 
 | Date       | Sentiment Score (Subreddit 1) | Sentiment Score (Subreddit 2) | Approval Rate (%) |
 |------------|-------------------------------|-------------------------------|--------------------|
