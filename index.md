@@ -2,7 +2,6 @@
 layout: default
 title: Predicting presidential approval ratings with Reddit comments
 ---
-![Presidential Seal](visuals/president_seal.jpg)
 
 ## Motivation & Background
 Many politicos and pundits complain about the accuracy of polls during presidential, state, and federal election cycles. While issues with public perception of polling accuracy are nothing new, some of the unconventional and non-traditional ways to predict outcomes nowadays are: Polymarket–an online betting platform–outperformed most traditional pollsters in predicting Donlad Trump as the winner of the presidential election. 
