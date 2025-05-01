@@ -25,8 +25,8 @@ Our data came from 2 main sources:
 - Data collected by Gallup
   
 **Reddit Comments**
+- Retrieved using the [Reddit API](https://developers.reddit.com/docs/0.9/api)
 - Comments and posts about presidents (Obama, Trump, Biden)
-- Retrieved using the Reddit API
 - Date range: 2009-2025
 
 Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). The schema of the final data set was as follows (please note, this is an example):
