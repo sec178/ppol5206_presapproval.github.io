@@ -55,6 +55,12 @@ The pipeline follows this general path:
 The Python notebook used to compile and merge the data, calculate sentiment, and train the model can be found here:
 <iframe src="https://sec178.github.io/ppol5206_presapproval.github.io/code/sentiment_approval_pipeline.html" width="100%" height="600px"></iframe>
 
+<details>
+  <summary>Click to see more</summary>
+  Here is the content inside the dropdown!
+  You can put anything here, like text, images, or other links.
+</details>
+
 ---
 ## Exploratory Data Analysis
 
