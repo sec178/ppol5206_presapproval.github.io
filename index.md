@@ -52,7 +52,7 @@ The pipeline follows this general path:
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
 The Python notebook used to compile and merge the data, calculate sentiment, and train the model can be found here:
-<iframe src="https://raw.githubusercontent.com/sec178/ppol5206_presapproval.github.io/code/sentiment_approval_pipeline.html" width="100%" height="600px"></iframe>
+<iframe src="https://raw.githubusercontent.com/sec178/ppol5206_presapproval.github.io/main/code/sentiment_approval_pipeline.html" width="100%" height="600px"></iframe>
 
 ---
 ## Exploratory Data Analysis
