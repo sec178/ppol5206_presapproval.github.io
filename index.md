@@ -12,6 +12,7 @@ For this project, we wanted to employ a similar non-traditional prediction metho
 
 Our GitHub repository containing the code used for this project can be found [here](https://github.com/holtcochran/PPOL5206-FinalProject/tree/main). 
 
+---
 ## Data
 Our data came from 2 main sources: 
 
@@ -27,6 +28,7 @@ Our data came from 2 main sources:
 
 Final data sets were compiled at the weekly (n=796) and daily level (n=5,885)
 
+---
 ## Methodology: Model & Pipeline in Databricks
 Once data were collected, we utilized Databricks for its cloud, Spark, and pipeline capabilities. This included the following steps:
 
@@ -38,11 +40,12 @@ Once data were collected, we utilized Databricks for its cloud, Spark, and pipel
 
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
+---
 ## Exploratory Data Analysis
 ![Approval Ratings over time by President](visuals/pres_approval_overtime.png) 
 ![Average Sentiment Scores (Rounded) for past 3 Presidents](visuals/pres_sentiment_avg.png)
 
-
+---
 ## Findings
 
 The lagged weekly model had an Mean Absolute Error of 3.4, with a Root Mean Squared Error of 4.36:  
