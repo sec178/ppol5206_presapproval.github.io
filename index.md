@@ -28,30 +28,29 @@ Our data came from 2 main sources:
 
 Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). 
 
-<!-- Load jQuery and DataTables -->
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+<!-- DataTables CSS and JS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
-<h2>Interactive CSV Table</h2>
+<h2>My CSV Table</h2>
 <table id="csv-table" class="display" style="width:100%"></table>
 
 <script>
-// Load and render CSV with DataTables
+// Load CSV and render DataTable
 $(document).ready(function() {
-    $.get('/data/approval.csv', function(csvData) {
-        const rows = csvData.split("\n").map(r => r.split(","));
-        const header = rows.shift();
-        const body = rows.filter(r => r.length === header.length);
+  $.get('/data/approval.csv', function(data) {
+    const lines = data.trim().split('\n');
+    const headers = lines[0].split(',');
+    const rows = lines.slice(1).map(row => row.split(','));
 
-        $('#csv-table').DataTable({
-            data: body,
-            columns: header.map(h => ({ title: h }))
-        });
+    $('#csv-table').DataTable({
+      data: rows,
+      columns: headers.map(h => ({ title: h }))
     });
+  });
 });
 </script>
-
 
 ---
 ## Methodology: Model & Pipeline in Databricks
