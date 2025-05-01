@@ -50,7 +50,7 @@ Once data were collected, we utilized Databricks for its cloud, Spark, and pipel
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
 The Python notebook used to compile and merge the data, calculate sentiment, and train the model can be found here:
-<iframe src="/code/sentiment_approval_pipeline.html" width="100%" height="600px" frameborder="0"></iframe>
+<iframe src="code/sentiment_approval_pipeline.html" width="100%" height="600px" frameborder="0"></iframe>
 
 ---
 ## Exploratory Data Analysis
