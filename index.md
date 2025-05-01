@@ -2,7 +2,7 @@
 layout: default
 title: Massive Data Fundamentals
 ---
-# Predicting presidential approval ratings with Reddit comments
+# Predicting Presidential Approval Rating with Reddit Comment Sentiment
 ![image](/visuals/download.png)
 ![image](/visuals/president_seal.jpg)
 
