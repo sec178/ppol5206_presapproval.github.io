@@ -67,6 +67,8 @@ A preliminary Python notebook used to compile and merge the data, calculate sent
   <a href="https://github.com/holtcochran/PPOL5206-FinalProject/tree/main/approval/notebooks" style="display: inline-block; padding: 10px 20px; margin: 5px; background-color: #ffc107; color: white; text-decoration: none; border-radius: 5px;">"Medallion" Pipeline: Ingestion (bronze), analysis (silver), consolidation (gold)</a>
 </details>
 
+
+
 ---
 ## Exploratory Data Analysis
 
@@ -75,7 +77,6 @@ We also used Databricks' dashboard functionality to visually explore our data:
 ![Average Sentiment Scores (Rounded) for past 3 Presidents](visuals/pres_sentiment_avg.png)
 ![Average Approval Rating for past 4 Presidents](visuals/pres_approval_avg.png)
 ![Correlation Matrix: comment sentiment and approval](visuals/corr_matrix.png)
-
 
 ---
 ## Findings
