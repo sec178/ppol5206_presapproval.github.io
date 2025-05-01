@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Predicting presidential approval ratings with Reddit comments
-image: visuals/download.png
+image: /visuals/download.png
 ---
 
 ## Motivation & Background
