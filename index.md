@@ -26,31 +26,16 @@ Our data came from 2 main sources:
 - Retrieved using the Reddit API
 - Date range: 2009-2025
 
-Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). 
+Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). The schema of the final data set was as follows:
 
-<!-- DataTables CSS and JS -->
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+| Date       | Sentiment Score (Subreddit 1) | Sentiment Score (Subreddit 2) | Approval Rate (%) |
+|------------|-------------------------------|-------------------------------|--------------------|
+| 2023-01-01 | 0.12                          | 0.09                          | 45                 |
+| 2023-01-08 | 0.18                          | 0.14                          | 47                 |
+| 2023-01-15 | 0.15                          | 0.13                          | 46                 |
+| 2023-01-22 | 0.10                          | 0.08                          | 44                 |
+| 2023-01-29 | 0.20                          | 0.17                          | 48                 |
 
-<h2>My CSV Table</h2>
-<table id="csv-table" class="display" style="width:100%"></table>
-
-<script>
-// Load CSV and render DataTable
-$(document).ready(function() {
-  $.get('/data/approval.csv', function(data) {
-    const lines = data.trim().split('\n');
-    const headers = lines[0].split(',');
-    const rows = lines.slice(1).map(row => row.split(','));
-
-    $('#csv-table').DataTable({
-      data: rows,
-      columns: headers.map(h => ({ title: h }))
-    });
-  });
-});
-</script>
 
 ---
 ## Methodology: Model & Pipeline in Databricks
