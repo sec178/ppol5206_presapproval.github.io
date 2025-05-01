@@ -26,7 +26,16 @@ Our data came from 2 main sources:
 - Retrieved using the Reddit API
 - Date range: 2009-2025
 
-Final data sets were compiled at the weekly (n=796) and daily level (n=5,885)
+Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). The schema of the final data set was as follows (please note, this is an example):
+
+| Date       | Sentiment Score (Subreddit 1) | Sentiment Score (Subreddit 2) | ... | Approval Rate (%) |
+|------------|-------------------------------|-------------------------------|-----|--------------------|
+| 2023-01-01 | 0.12                          | 0.09                          | ... | 45                 |
+| 2023-01-08 | 0.18                          | 0.14                          | ... | 47                 |
+| 2023-01-15 | 0.15                          | 0.13                          | ... | 46                 |
+| 2023-01-22 | 0.10                          | 0.08                          | ... | 44                 |
+| 2023-01-29 | 0.20                          | 0.17                          | ... | 48                 |
+
 
 ---
 ## Methodology: Model & Pipeline in Databricks
@@ -36,7 +45,7 @@ Once data were collected, we utilized Databricks for its cloud, Spark, and pipel
 
 *Data Merging*: Sentiment scores were aggregated by mean for subreddits and the daily and weekly level. This was then merged with approval rating by date
 
-*Model Training*: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating. The XGboost algorithm was chosen for its accuracy and ability to handle null values
+*Model Training*: An XGboost model was then trained using the subreddit sentiment and input features, with the target feature being approval rating. The XGboost algorithm was chosen for its accuracy and ability to handle null values. We tested two different XGboost models: one predicting weekly approval ratings using comment sentiment aggregated by mean at the lagged weekly level (n=796) to account for delays in reporting, and one at the daily level (n=5,885)
 
 ![Pipeline Diagram](visuals/pipeline_databricks.png)
 
