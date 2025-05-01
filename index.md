@@ -3,6 +3,7 @@ layout: default
 title: Massive Data Fundamentals
 ---
 # Predicting Presidential Approval Rating with Reddit Comment Sentiment
+By Daniel Cardenas Sanchez, Holt Cochran, Sam Cohen, Gabriel Soto, & Vaishnavi Singh
 ![image](/visuals/download.png)
 ![image](/visuals/president_seal.jpg)
 
