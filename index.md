@@ -29,7 +29,7 @@ Our data came from 2 main sources:
 - Comments and posts about presidents (Obama, Trump, Biden)
 - Date range: 2009-2025
 
-Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). The schema of the final data set was as follows (please note, this is an example):
+Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). The schema of the final data set was as follows (note that this is an example):
 
 | Date       | Sentiment Score (Subreddit 1) | Sentiment Score (Subreddit 2) | ... | Approval Rate (%) |
 |------------|-------------------------------|-------------------------------|-----|--------------------|
@@ -38,6 +38,7 @@ Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). T
 | 2023-01-15 | 0.15                          | 0.13                          | ... | 46                 |
 | 2023-01-22 | -0.10                         | 0.08                          | ... | 44                 |
 
+*Please note: because of the size data files and privacy concerns listed by the Reddit API, we were not able to upload a full version of the final data sets to our GitHub repisitory. However, a sample of the data may be available upon request.
 
 ---
 ## Methodology: Model & Pipeline in Databricks
