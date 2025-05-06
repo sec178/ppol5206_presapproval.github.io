@@ -58,7 +58,7 @@ A preliminary Python notebook used to compile and merge the data, calculate sent
 <iframe src="https://sec178.github.io/ppol5206_presapproval.github.io/code/sentiment_approval_pipeline.html" width="100%" height="600px"></iframe>
 
 <details>
-  <summary>Click to see more of the final code notebooks for our project</summary>
+  <summary><strong>Click to see more of the final code notebooks for our project</strong></summary>
   
   <a href="https://github.com/holtcochran/PPOL5206-FinalProject/blob/main/approval/notebooks/approval_rating/mdf_presapproval.ipynb" style="display: inline-block; padding: 10px 20px; margin: 5px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">Approval scraping script</a>
 
