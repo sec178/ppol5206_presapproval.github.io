@@ -38,7 +38,7 @@ Final data sets were compiled at the weekly (n=796) and daily level (n=5,885). T
 | 2023-01-15 | 0.15                          | 0.13                          | ... | 46                 |
 | 2023-01-22 | -0.10                         | 0.08                          | ... | 44                 |
 
-**Please note: because of the size data files and privacy concerns listed by the Reddit API, we were not able to upload a full versions of the final data sets to our GitHub repisitory. However, a sample of the data may be available upon request.*
+**Please note: because of the size data files and privacy concerns listed by the Reddit API, we were not able to upload a full versions of the final data sets with comments to our GitHub repisitory. However, a sample of the comment and post data (which had sentiment scores caldulated and was merged with approval rating data) can be found in our GitHub repository (here)[https://github.com/holtcochran/PPOL5206-FinalProject/tree/main/approval/data].*
 
 ---
 ## Methodology: Model & Pipeline in Databricks
