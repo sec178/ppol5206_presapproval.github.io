@@ -13,7 +13,7 @@ Many politicos complain about the accuracy of polls during presidential, state, 
 
 For this project, we wanted to employ a similar non-traditional prediction method, and see if a model trained on the sentiment of reddit comments about sitting presidents could yield similar approval rating results to actual polls. Findings could potentially produce a way to gauge approval rating without the need for extensive polling more broadly, or at the very least, augment pollsters’ findings. 
 
-Our GitHub repository containing the code used for this project can be found [here](https://github.com/holtcochran/PPOL5206-FinalProject/tree/main). 
+Our GitHub repository containing the code used for this project can be found (here)[https://github.com/holtcochran/PPOL5206-FinalProject/tree/main]. 
 
 ---
 ## Data
